@@ -95,7 +95,7 @@ with torch.no_grad():
             pro_contradiction.append(sorces[j][0])
 
 
-for i in range(14056):
+for i in range(len(query)):
     for j in range(100):
         text_pro.append([dialogs[i][j],pro_entailment[i*100+j],pro_neutral[i*100+j],pro_contradiction[i*100+j]])
         
@@ -104,7 +104,7 @@ for i in range(14056):
 
 
 with open('final.tsv', "w", encoding="utf-8") as outf:
-    for i in range(14056):
+    for i in range(len(query)):
         outf.write(f"persona:{personas[i]}\tquery:{query[i]}\tgold:{gold[i]}\n")
         for j in range(1):
             outf.write(f"{text_pro_sorted[i*100+j][0]}\n")
