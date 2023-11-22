@@ -19,12 +19,12 @@ Multi-GPT2: https://github.com/caoyu-noob/Multi-GPT2
 ## Second Step: Post-evaluation ##
 Post-evaluation consists of two parts: coherence evaluation and consistency evaluation. In coherence evaluation, the TF-IDF algorithm is used. In consistency evaluation, natural language inference (NLI) is used.
 
-TF-IDF algorithm
+Coherence Evaluation (TF-IDF)
 
     python coherence_evaluation.py
 
-Natural Language Inference
+Consistency Evaluation (NLI)
+
+> For the weights of the NLI model, you need to download it from the following link and place it into the consistent_model/ folder: [link](https://drive.google.com/file/d/1MX-V1mdGwfZ4Rqhjo87XEZtN2Snzw9M_/view?usp=drive_link)
     
     python consistent_evaluation.py
-
-For the weights of the NLI model, you need to download it from the following link and place it into the consistent_model/ folder: [link](https://drive.google.com/file/d/1MX-V1mdGwfZ4Rqhjo87XEZtN2Snzw9M_/view?usp=drive_link)
