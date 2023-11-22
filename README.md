@@ -28,6 +28,4 @@ Natural Language Inference
     
     python consistent_evaluation.py
 
-
-
-
+For the weights of the NLI model, you need to download it from the following link and place it into the consistent_model/ folder: [link](https://drive.google.com/file/d/1MX-V1mdGwfZ4Rqhjo87XEZtN2Snzw9M_/view?usp=drive_link)
