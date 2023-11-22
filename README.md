@@ -18,7 +18,7 @@ Multi-GPT2: https://github.com/caoyu-noob/Multi-GPT2
 > Implementation details: we directly use top-k sampling for sampling. 
 
 # Second Step: Post-evaluation
-The TF-IDF algorithm and natural language inference (NLI) are used for coherence and consistency evaluation, respectively.
+Post-evaluation consists of two parts: coherence evaluation and consistency evaluation. In coherence evaluation, the TF-IDF algorithm is used. In consistency evaluation, natural language inference (NLI) is used.
 
 TF-IDF algorithm
 
@@ -27,3 +27,7 @@ TF-IDF algorithm
 Natural Language Inference
     
     python consistent_evaluation.py
+
+
+
+
