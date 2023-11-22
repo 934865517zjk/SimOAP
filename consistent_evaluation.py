@@ -22,7 +22,7 @@ else:
     print("CUDA NOT AVAILABLE")
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
-NLI_MODEL_PATH = '/consistent_nli/'
+NLI_MODEL_PATH = '/consistent_model/'
 
 
 text_list = []
